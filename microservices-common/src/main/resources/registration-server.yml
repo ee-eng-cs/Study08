@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:  # Not a client, don't register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
+
+server:
+  port: 8761
+  
+# Eureka dashboard uses FreeMarker.
+spring:
+  thymeleaf:
+    enabled: false # Disable Thymeleaf 
